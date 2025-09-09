@@ -1,5 +1,5 @@
 # Stage 1: Build with Maven and JDK 24
-FROM maven:3.8.3-eclipse-temurin-24 AS build
+FROM eclipse-temurin:24-jdk AS build
 
 # Set working directory
 WORKDIR /app
