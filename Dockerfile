@@ -3,6 +3,14 @@ FROM eclipse-temurin:24-jdk AS build
 
 # Set working directory
 WORKDIR /app
+# Make Maven wrapper executable
+RUN chmod +x ./mvnw
+
+# Download dependencies offline
+RUN ./mvnw dependency:go-offline
+
+# Build jar
+RUN ./mvnw clean package -DskipTests
 
 # Copy project files
 COPY . .
