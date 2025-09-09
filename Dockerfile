@@ -20,4 +20,6 @@ RUN ./mvnw clean package -DskipTests
 
 # Run the Spring Boot jar
 CMD ["java", "-jar", "target/*.jar"]
+# Make Maven wrapper executable
+RUN chmod +x mvnw
 
