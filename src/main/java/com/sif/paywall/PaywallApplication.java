@@ -2,9 +2,9 @@ package com.sif.paywall;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 import com.sif.paywall.models.ConnectDB;
 
-import java.sql.*;
 
 @SpringBootApplication
 public class PaywallApplication {
@@ -14,6 +14,11 @@ public class PaywallApplication {
 
 
 
+
+
+
     }
+
+
 
 }
